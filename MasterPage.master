@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Anatra - restavracija</title>
+	<meta charset="UTF-8">
+	<meta name="title" content="restavracija Anatra">
+	<meta name="keywords" content="italija, restavracija, hrana, tradicija, odličnost">
+	<meta name="author" content="Drejc Pesjak">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		
+	<link rel="stylesheet" type="text/css" href="stili.css">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+			<h1>restavracija <br> ANATRA 
+			<img src="slike/saltPepper3.png"></h1>
+			<nav>
+				<ul>
+					<li><a href="domov.aspx">DOMOV</a></li>
+					<li><a href="jedilnik.aspx">JEDILNIK</a></li>
+					<li><a href="onas.aspx">O NAS</a></li>
+					<li><a href="kontakt.aspx">KONTAKT</a></li>
+					<li><a id="desno" href="registracija-zaposleni.aspx"></a></li>
+				</ul>
+			</nav>			
+		</header>
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <footer>
+		Copyright © 2017 <a href="Domaca.html">Dr.exe</a>. All rights reserved.
+		</footer>
+    </form>
+</body>
+</html>

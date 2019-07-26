@@ -1,0 +1,188 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family:'Simplifica';
+	font-weight:normal;	
+	vertical-align: baseline;
+}
+/******************************************************************/
+@font-face {
+	font-family: 'Simplifica';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Simplifica'), url('SIMPLIFICA Typeface.woff') format('woff');
+}
+
+header{
+	position:fixed;
+	top:0;
+	height: 2.45em;
+	width: 100%;
+	background-color: lightgray;
+	font-size: 200%;
+	z-index: 1;
+}
+
+header a{
+	padding:1em;
+	text-decoration: none;
+	font-size: 80%;
+	color: black;
+}
+ul{margin-top: 0.6em;}
+
+header img{
+	height: 0.8em; 
+	width: auto;
+}
+
+header li{
+	display:inline;
+}
+
+header h1{	
+	float: left;
+	margin:0.1em 0.7em 0.1em 0.5em;
+}
+
+/*section ki je skrit pod/za glavo(header)*/
+section:first-child{	
+	font-size:3em;
+	margin-top: 2.45em;	
+}
+
+/*glavni section*/
+#text{
+	font-size:185%;
+	letter-spacing: 1px;	
+	margin: 0.2em 5.4em 0 5.4em;
+}
+html{height:96.5%;}
+body{
+	position:relative;
+	padding-bottom:2.1em;  
+    min-height:100%;     
+}
+
+/*ODPIRALNI ČAS*/
+table{
+	width:30%;
+	margin: 2em auto;
+	border: 1px grey solid;
+}
+td:nth-child(2), td:nth-child(3){text-align:right;}
+th{
+	font-size: 1.3em;
+	border-bottom: 1px grey solid;
+}
+
+/*zaposleni/ekipa*/
+h2{
+	font-weight:bold;
+	font-size: 1.3em;
+}
+
+.item > img{
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;	
+}
+.item{
+	display: inline-block;
+	margin: 15px;
+}
+.caption{text-align:center;}
+
+/*kontakt*/
+	/*telefon,email,naslov*/
+	pre{
+		/*float:right;	*/
+		position:absolute; 
+        top:2.64em; right:0;
+		width: 20%;
+		height: calc(100% - 2.45em - 2.2em);		
+		background-color: lightgray;
+		border-top: 1px gray solid;		
+		padding: 1em;
+	}
+	pre b{font-weight:bold;}
+	/*contact form*/
+	.container{		
+		margin-top: 0.5em;
+		width:30%;
+		padding: 1em;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);		
+	}
+	.container input{		
+		margin: 0 0 10px;
+		min-width: 100%;		
+		width: 100%;
+		padding: 10px;
+        box-sizing: border-box;
+	}	
+	#h2{margin-bottom:10px;}        
+	[tabindex="5"]{/*textarea*/
+	  height: 300px;
+	  width: 100%;
+	  max-width: 100%;
+	  resize: none;
+	  padding: 10px;
+      box-sizing: border-box;
+	}
+	#contact-submit{/*button*/
+	  cursor: pointer;
+	  width: 100%;
+	  border: none;	  
+	  margin: 10px 0 5px;
+	  padding: 10px;
+	  
+	}
+
+	
+
+footer{	
+	padding:0.5em;
+	background-color: lightgray;
+	position:absolute;
+		right: 0;	bottom: 0;	left: 0;	
+	font-size: 1.1em;
+	letter-spacing: 1px;
+}
+footer a{color:black;}
+
+a:hover{background-color:gray;}
+#desno{float: right;}
+
+/*domaca stran-okvir glavne slike*/
+div.wrapper{      
+    position:relative;   
+}  /*napis k glavni sliki*/
+	div.description{  
+		position:absolute;   
+		top: 30%; 
+		left:0px;        
+		font-size: 3em;
+		padding:0.3em 0.3em 0.3em 3em;	
+		text-align: center;
+		color: white;	
+		background: rgba(0,0,0,0.4);
+	}
+/*glavna slika*/
+#naslovna{
+	width:100%;
+}
